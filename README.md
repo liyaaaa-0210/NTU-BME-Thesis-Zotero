@@ -292,7 +292,7 @@ Omit Author / Suppress Author
 
 ![Add CSL Style](images/12-omit-author.png)
 
-應該在文獻中顯示:
+應該在內文中顯示:
 
 ```text
 (2014)
