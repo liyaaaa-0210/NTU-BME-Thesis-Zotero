@@ -105,42 +105,121 @@ NTU-BME-Thesis.csl
 此設定用於中、日、英文文獻的分組與排序。
 
 中文:
-![Add CSL Style](images/06-chinese-style-in-word.png)
 
-## 中文姓氏筆畫排序
+![Add CSL Style](images/11-chinese-language.png)
 
-臺大生機系規定中文參考文獻依作者姓氏筆畫排列。
+英文:
 
-由於 Zotero / CSL 無法可靠地自動判斷繁體中文姓氏筆畫順序，本 CSL 使用 Zotero `Extra` 欄位中的 `Annote` 作為人工排序鍵。
+![Add CSL Style](images/07-english-language.png)
 
-例如：
+請不要混用：
+```text
+Chinese
+中文
+Traditional Chinese
+zh_TW
+English
+ENG
+```
 
+---
+
+# 🇨🇳 4. 中文文獻設定
+
+中文文獻的：
+```text
+Language
+```
+請設定成：
+```text
+zh-TW
+```
+另外，由於臺大生機系規定：
+
+> **中文文獻應依作者姓氏筆畫順序排列。**
+> 
+目前 Zotero / CSL 無法可靠自動判斷繁體中文姓氏筆畫，因此本 CSL 使用 Zotero 的 `Extra `欄位人工指定排序。
+例如第一順位：
 ```text
 Language: zh-TW
 
-Extra 欄位填上   Annote: 001
-                Annote: 002
-                Annote: 003 等
-
-依此類推 自行照順序排列
+Extra:
+Annote: 001
 ```
-## 文中引用
+![Add CSL Style](images/05-chinese-language-order-001.png)
 
-一般括號式引用：
+下一順位：
+```text
+Language: zh-TW
+
+Extra:
+Annote: 002
+```
+![Add CSL Style](images/06-chinese-language-order-002.png)
+
+依此類推：
+```text
+Annote: 001
+Annote: 002
+Annote: 003
+...
+Annote: 010
+Annote: 011
+```
+> **[!NOTE]
+`Annote` 除了作為中文文獻排序鍵，也用來觸發本 CSL 的中文格式，例如中文句號 `。`。**
+
+# 🇺🇸 5. 英文文獻設定
+
+中文文獻的：
+```text
+Language
+```
+請設定成：
+```text
+en-US
+```
+![Add CSL Style](images/07-english-language.png)
+---
+英文文獻的 `Extra` 不需要加入 `Annote`。
+例如：
+```text
+Language: en-US
+
+Extra:
+（留空）
+```
+# 🔤 6. 文獻排序規則
+
+臺大生機系論文參考文獻要求依：
+1. 中文
+2. 日文
+3. 英文／歐文
+排列。
+同一作者有數篇文獻時，再依發表年份由舊至新排列。
+本 CSL 的排序概念為：
 
 ```text
-(Smith, 2020)
-(Smith and Wang, 2020)
-(Smith et al., 2020)
+Language
+↓
+Chinese manual stroke-order key
+↓
+Author
+↓
+Year
+↓
+Title
 ```
-敘述式引用：
-
+因此請務必確認每篇英文文獻都有：
 ```text
-Smith (2020)
-Smith and Wang (2020)
-Smith et al. (2020)
+Language: en-US
 ```
-## 中文與英文參考文獻
+如果英文文獻沒有填寫 Language，可能會造成英文文獻無法正常依姓氏字母排序。
+
+# ✍️ 7. 中文文獻格式
+
+本csl檔已經設定好，當語言`zh-TW`會用`。` ， 語言`en-US`會用`.`
+
 
 中文文獻範例：
 
@@ -152,13 +231,76 @@ Smith et al. (2020)
 
 中文與英文文獻會依各自格式使用不同標點。
 
-## Based on
+# 🔠 8. 英文文獻格式
+
+英文文獻例如：
+```text
+Anderson, G. T., C. V. Renard, L. M. Strein, E. C. Cayo, and M. M. Mervin. 1998. Article title. Applied Eng. in Agric. 23(2): 34-42.
+```
+英文作者格式：
+第一作者：
+
+```text
+Anderson, G. T.
+```
+第二作者之後：
+
+```text
+C. V. Renard
+```
+最後一位作者前使用：
+
+```text
+and
+```
+
+# 📖 9. 文中引用格式
+
+## 括號式引用
+一位作者：
+
+```text
+(Smith, 2020)
+```
+兩位作者：
+```text
+(Smith and Wang, 2020)
+```
+三位以上：
+```text
+(Smith et al., 2020)
+```
+
+## 敘述式引用：
+
+如果作者名稱已經出現在句子中：
+
+```text
+Smith (2020) reported that ...
+```
+或：
+```text
+Smith et al. (2020) found that ...
+```
+在 Zotero Word Plugin 中可使用：
+```text
+Omit Author / Suppress Author
+```
+讓 Zotero 僅產生年份。
+
+
+---
+
+## 自行修改程式
+
+
+### Based on
 
 This CSL style was modified from the Citation Style Language (CSL) style for the American Society of Agricultural and Biological Engineers (ASABE) and adapted for NTU BME thesis formatting requirements.
 
 Original attribution and licensing information are retained in the CSL file.
 
-## Disclaimer
+### Disclaimer
 
 This is an unofficial community-maintained CSL style and is not officially provided or endorsed by National Taiwan University or the Department of Bio-Industrial Mechatronics Engineering.
 
