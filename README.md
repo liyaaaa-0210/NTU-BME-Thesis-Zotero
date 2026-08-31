@@ -180,6 +180,7 @@ Language
 en-US
 ```
 ![Add CSL Style](images/07-english-language.png)
+
 ---
 英文文獻的 `Extra` 不需要加入 `Annote`。
 例如：
@@ -283,25 +284,89 @@ Smith (2020) reported that ...
 Smith et al. (2020) found that ...
 ```
 在 Zotero Word Plugin 中可使用：
+
 ```text
 Omit Author / Suppress Author
 ```
 讓 Zotero 僅產生年份。
 
+![Add CSL Style](images/12-omit-author.png)
+
+應該在文獻中顯示:
+
+```text
+(2014)
+```
 
 ---
 
-## 自行修改程式
+# 🛠️ 10. 修改 CSL
+
+如果需要自行調整 CSL，可以使用 Zotero 內建的 Style Editor。
+
+![Add CSL Style](images/01-zotero-settings.png)
+
+進入：
+
+`Settings → Cite`
+
+往下找到：
+
+`Style Editor`
+
+![Add CSL Style](images/08-style-editor.png)
+
+開啟後即可查看與修改 CSL 程式碼：
+
+![Add CSL Style](images/09-style-code.png)
+
+修改完成後，可以使用：
+
+```text
+Save As...
+```
+
+另存新的 `.csl`。
+
+> **建議修改前先備份原本的 CSL。**
+>
+# ⚠️ 注意事項
+
+正式提交論文前，建議人工再次確認：
+- 中文文獻是否位於最前方
+- 日文是否位於中文與英文之間
+- 英文文獻是否依作者姓氏 A–Z 排列
+- 中文姓氏是否符合筆畫順序
+- 同一作者是否依年份由舊至新排列
+- 中文文獻是否使用 `。`
+- 英文文獻是否使用 `.`
+- Journal abbreviation 是否正確
+- Thesis、Book、Conference 等特殊文獻類型是否符合系所規範
 
 
-### Based on
+## 📌 Based on
 
-This CSL style was modified from the Citation Style Language (CSL) style for the American Society of Agricultural and Biological Engineers (ASABE) and adapted for NTU BME thesis formatting requirements.
+本 CSL 以：
+American Society of Agricultural and Biological Engineers (ASABE)
+Citation Style Language 為基礎進行修改，並依臺大生機系論文撰寫格式進行調整。
+原始 CSL 的作者與授權資訊保留於 `.csl `檔案中。
 
-Original attribution and licensing information are retained in the CSL file.
+## ⚠️ Disclaimer
 
-### Disclaimer
+This is an unofficial community-maintained CSL style.
+本專案不是臺灣大學或臺灣大學生物產業機電工程學系官方發布之 Citation Style。
+若本 CSL 與系所最新論文格式規範有所衝突：
+> **請以系所官方最新規定為準。**
 
-This is an unofficial community-maintained CSL style and is not officially provided or endorsed by National Taiwan University or the Department of Bio-Industrial Mechatronics Engineering.
+---
 
-If this CSL conflicts with the latest departmental thesis regulations, the official regulations shall prevail.
+## 🦈 最後的小小祝福 🦈
+
+**祝每一位看到這裡的人，都能順利寫完論文、順利口試、順利畢業！🎓**
+
+希望這份 CSL 可以幫大家省下一點整理格式的時間。  
+少一點被 Zotero 搞到崩潰，多一點時間好好做研究 XD
+
+**畢業加油！🦈🦈🦈**
+
+---
