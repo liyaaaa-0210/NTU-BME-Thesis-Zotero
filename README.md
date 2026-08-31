@@ -89,7 +89,7 @@ NTU-BME-Thesis.csl
 
 `NTU-BME-Thesis`
 
-![Add CSL Style](images/04-word-document-preferences.png)
+![Add CSL Style](images/10-choose-style-in-word.png)
 
 
 # 🌏 3. Language 設定
@@ -103,6 +103,9 @@ NTU-BME-Thesis.csl
 | 英文 | `en-US` |
 
 此設定用於中、日、英文文獻的分組與排序。
+
+中文:
+![Add CSL Style](images/06-chinese-style-in-word.png)
 
 ## 中文姓氏筆畫排序
 
