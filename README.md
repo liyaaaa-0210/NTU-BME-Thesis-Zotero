@@ -1,2 +1,14 @@
-# NTU-BME-Thesis-CSL
-Unofficial Zotero CSL style for NTU BME theses and dissertations.
+# NTU BME Thesis Zotero CSL
+
+臺灣大學生物產業機電工程學系碩博士論文 Zotero 引用格式之非官方 CSL。
+
+> ⚠️ 本專案並非臺大生機系官方發布之引用格式。實際論文格式仍應以系所最新規定為準。
+
+## 功能
+
+- 臺大生機系 Author–Year 引用格式
+- 中文、日文、英文文獻排序
+- 中文文獻使用中文標點
+- 英文文獻使用英文標點
+- 支援人工指定中文姓氏筆畫排序
+- Zotero 可直接安裝 `.csl`
