@@ -1,4 +1,4 @@
-# NTU BME Thesis Zotero CSL
+# # 臺大生機系論文 Zotero 引用格式
 
 臺灣大學生物產業機電工程學系碩博士論文使用之非官方 Zotero CSL 樣式。
 
