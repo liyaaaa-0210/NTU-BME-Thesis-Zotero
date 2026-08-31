@@ -23,10 +23,6 @@
 - Bibliography 建立
 - Citation Style 設定
 
-本專案主要補充：
-
-> **臺大生機系論文引用格式、中英文文獻格式與排序設定。**
-
 ---
 ## 🔧 本專案提供什麼？
 
@@ -41,7 +37,62 @@
 - Zotero `Language` 欄位設定
 - Zotero `Extra / Annote` 欄位設定
 
-## Zotero Language 設定
+本專案主要補充：
+
+> **臺大生機系論文引用格式、中英文文獻格式與排序設定。**
+
+---
+
+# 📥 1. 安裝 NTU BME Thesis CSL
+
+## Step 1：進入 Zotero Settings
+
+開啟 Zotero 後：
+
+`Edit → Settings`
+
+![Open Zotero Settings](images/01-zotero-settings.png)
+
+---
+
+## Step 2：進入 Cite
+
+在 Settings 左側選擇：
+
+`Cite`
+
+接著按：
+
+`Add from File...`
+
+![Add CSL Style](images/02-add-csl-style.png)
+
+---
+
+## Step 3：選擇 CSL 檔案
+
+選擇本專案提供的：
+
+NTU-BME-Thesis.csl
+
+![Add CSL Style](images/03-select-csl-file.png)
+
+# 📝 2. 在 Microsoft Word 套用格式
+
+開啟 Word 後，進入：
+
+`Zotero → Document Preferences`
+
+![Add CSL Style](images/04-word-document-preferences.png)
+
+在 Citation Style 中選擇：
+
+`NTU-BME-Thesis`
+
+![Add CSL Style](images/04-word-document-preferences.png)
+
+
+# 🌏 3. Language 設定
 
 請在 Zotero 中統一設定文獻語言：
 
